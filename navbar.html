@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .navbar {
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+        }
+        @media (min-width: 1200px) {
+            .container{
+                max-width: 970px;
+            }
+        }
+    </style>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <title>index</title>
@@ -17,7 +29,22 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="">chanel A</a></li>
             <li><a href="">chanel B</a></li>
-            <li><a href="">chanel C</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="">
+                    chanel C
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="">A</a></li>
+                    <li><a href="">B</a></li>
+                    <li><a href="">C</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button class="btn btn-danger navbar-btn">button...</button>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href=""><span class="glyphicon glyphicon-user"></span> User</a></li>
+            <li><a href=""><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
         </ul>
     </div>
 </nav>
