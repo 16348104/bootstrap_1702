@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .c1,
+        .c2 {
+            display: inline-block;
+            height: 20px;
+            float: left;
+        }
+
+        .c1 {
+            width: 12%;
+            color: #fff;
+            background: #369;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        .c2 {
+            width: 88%;
+            background: #eee;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-top: 1px #ccc solid;
+        }
+
+
+    </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>index</title>
+</head>
+<body>
+<div class="container">
+    <h1>Index Page</h1>
+    <p>Hello, Bootstrap!</p>
+    <div class="progress">
+        <div class="progress-bar" style="width: 12%">12%</div>
+    </div>
+
+    <!--<div class="c1">12%</div><div class="c2"></div>-->
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger" style="width: 50%">50%</div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 50%">50%</div>
+        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 50%">50%</div>
+    </div>
+</div>
+</body>
+</html>
