@@ -13,15 +13,17 @@
     <div class="form-horizontal">
         <form action="http://bing.com">
             <div class="form-group">
-                <label class="control-label col-md-2" for="username">Username</label>
+                <label class="control-label col-md-2">Username</label>
                 <div class="col-md-10">
-                    <input id="username" class="form-control" type="text" placeholder="username">
+                    <!--<input id="username" class="form-control" type="text" placeholder="username">-->
+                    <p class="form-control-static">Tom</p>
                 </div>
             </div>
             <div class="form-group">
                 <label class="control-label col-md-2" for="password">Password....</label>
                 <div class="col-md-10">
                     <input id="password" class="form-control" type="password" placeholder="password">
+                    <p>character 6</p>
                 </div>
             </div>
             <div class="form-group">
@@ -57,7 +59,9 @@
             <div class="form-group">
                 <label class="col-md-2 control-label">Avatar</label>
                 <div class="col-md-10">
-                    <input type="file">
+                    <label class="btn btn-warning">
+                        Browse <input type="file" style="display: none">
+                    </label>
                 </div>
             </div>
             <div class="form-group">
@@ -74,6 +78,18 @@
             </div>
         </form>
     </div>
+    <form action="">
+        <div class="input-group has-success">
+            <!--<label>Username</label>-->
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input class="form-control" type="text">
+            <div class="input-group-btn">
+                <button class="btn btn-danger">
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
 </div>
 </body>
 </html>
