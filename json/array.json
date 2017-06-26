@@ -1,0 +1,18 @@
+[
+  123,
+  true,
+  "hello",
+  null,
+  {
+    "name": "Tom",
+    "age": 18,
+    "married": false,
+    "gender": null,
+    "array": [
+      123,
+      true,
+      "hello",
+      null
+    ]
+  }
+]
